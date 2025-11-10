@@ -1,0 +1,78 @@
+# ----------------------------------------
+# Python / Poetry
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments (Poetry manages these)
+# They usually live in ~/.cache/pypoetry/virtualenvs, but just in case:
+.venv/
+venv/
+env/
+
+# Poetry lock file (keep pyproject.toml, but you may include poetry.lock if you want reproducibility)
+# Uncomment the next line if you want to ignore the lock file
+# poetry.lock
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+
+# Logs and coverage reports
+*.log
+*.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Testing / temporary
+.tox/
+.pytest_cache/
+htmlcov/
+junit.xml
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Data / experiment outputs
+data/output/
+data/temp/
+*.csv
+*.txt
+*.log
+*.cnf.bak
+
+# ----------------------------------------
+# Custom project-specific ignores
+# ----------------------------------------
+# Ignore any large SAT solver results or generated files
+results/
+logs/
+checkpoints/

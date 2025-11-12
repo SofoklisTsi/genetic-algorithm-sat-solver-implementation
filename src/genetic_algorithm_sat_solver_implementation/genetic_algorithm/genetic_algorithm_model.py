@@ -35,7 +35,7 @@ candidate solutions toward satisfying all SAT clauses.
 """
 
 import numpy as np
-from typing import List
+from typing import List, ClassVar
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 class GeneticAlgorithmModel(BaseModel):
@@ -66,7 +66,7 @@ class GeneticAlgorithmModel(BaseModel):
     # ----------------------------------------
 
     model_config = {"arbitrary_types_allowed": True}
-    DEFAULT_MAX_GENERATIONS: int = 100
+    DEFAULT_MAX_GENERATIONS: ClassVar[int] = 100
         
     clauses: List[List[int]] = Field(..., description="List of clauses, each containing literals")
     num_clauses: int = Field(..., description="The total number of clauses in the SAT problem.")
